@@ -125,7 +125,10 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     daemon_threads = True
 
 
-with picamera.PiCamera(resolution='1640x480', framerate=24) as camera:
+with picamera.PiCamera() as camera:
+    # Get the maximum resolution supported by the camera
+    max_resolution = camera.MAX_RESOLUTION
+    camera.resolution = max_resolution
     camera.zoom = (0.0, 0.0, 1.0, 1.0)  # Set zoom to achieve the desired FOV
     output = StreamingOutput()
     # Uncomment the next line to change your Pi's Camera rotation (in degrees)
