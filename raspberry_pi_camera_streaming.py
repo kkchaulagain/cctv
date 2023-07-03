@@ -48,7 +48,7 @@ PAGE="""\
 					<img src="https://mastersubhajit.com/pi-camera.png" alt="">
 				</div>
 				<div class="col-lg-6 offset-lg-6">
-						<center><img src="stream.mjpg" class="img-fluid rounded" width="640" height="480"></center>
+						<center><img src="stream.mjpg" class="img-fluid rounded" width="1280" height="720"></center>
 					<a href="/" class="btn-border btn-color-01">Refresh</a>
 				</div>
 			</div>
@@ -121,7 +121,7 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     allow_reuse_address = True
     daemon_threads = True
 
-with picamera.PiCamera(resolution='640x480', framerate=120) as camera:
+with picamera.PiCamera(resolution='1280x720', framerate=120) as camera:
     output = StreamingOutput()
     #Uncomment the next line to change your Pi's Camera rotation (in degrees)
     #camera.rotation = 90
