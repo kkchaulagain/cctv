@@ -13,10 +13,9 @@ PAGE="""\
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Raspberry Pi Camera | Survillance</title>
+	<title>Raspberry Pi Camera | Surveillance</title>
 	<meta name="keywords" content="Live footage from Raspberry Pi">
-	<meta name="description" content="Survillance">
-	<meta name="mastersubhajit" content="Camera">
+	<meta name="description" content="Surveillance">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="shortcut icon" href="https://mastersubhajit.com/assets/favicon.ico">
@@ -36,18 +35,17 @@ PAGE="""\
 			s.parentNode.insertBefore(wf, s);
 		})();
 	</script>
-
 </head>
 <body>
 <main id="mainContent">
 	<div class="layout404">
-		<div class="layout404__logo"><a href="/">Survillance</a></div>
+		<div class="layout404__logo"><a href="/">Surveillance</a></div>
 		<div class="container">
 			<div class="row">
 				<div class="layout404__img">
 					<img src="https://mastersubhajit.com/pi-camera.png" alt="">
 				</div>
-				<div class="col-lg-6 offset-lg-6">
+				<div class="col-lg-8 offset-lg-2">
 						<center><img src="stream.mjpg" class="img-fluid rounded" width="1280" height="720"></center>
 					<a href="/" class="btn-border btn-color-01">Refresh</a>
 				</div>
