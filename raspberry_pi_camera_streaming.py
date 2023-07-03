@@ -32,6 +32,19 @@ PAGE="""\
             s.parentNode.insertBefore(wf, s);
         })();
     </script>
+    <style>
+        .layout404__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        #live-image, #captured-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
 <main id="mainContent">
